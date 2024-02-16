@@ -8,9 +8,24 @@
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <title>Online Kérdőívek</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navList = document.querySelector('.nav-list');
+
+            mobileMenuToggle.addEventListener('click', function () {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
 </head>
 <body>
     <nav>
+        <div class="menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
             <li><a href="#attapoll">Attapoll</a></li>
             <li><a href="#start-orszagospanel">Start Országospanel</a></li>
