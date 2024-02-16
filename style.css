@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('img/eric-cook-gyHEQ6_dvPw-unsplash.jpg'); /* Írd át a 'your-background-image.jpg'-t a háttérképed fájlnevére és elérési útjára */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigációs sáv stílus */
+nav {
+    text-align: center;
+    background-color: #000000;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Konténer stílus */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fejlécek stílus */
+h2, h3 {
+    text-align: center;
+    color: #2c7fb6;
+}
+h1{
+    text-align: center;
+    color: black;
+}
+/* Ikon konténer stílus */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Kérdőív stílus */
+.questionnaire {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Kérdőív címe stílus */
+.questionnaire h2 {
+    color: #3498db;
+}
+
+/* Kérdőív leírás stílus */
+.questionnaire .description {
+    color: #34495e;
+}
+
+/* Link stílus */
+a {
+    color: #3498db;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Hovered link stílus */
+a:hover {
+    text-decoration: underline;
+}
+/* Reszponzív stílusok */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+}
